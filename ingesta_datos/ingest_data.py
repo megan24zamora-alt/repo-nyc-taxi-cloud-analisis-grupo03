@@ -85,7 +85,7 @@ def subir_a_gcs(archivo_local: str, bucket_name: str, blob_name: str) -> str:
 
     blob = bucket.blob(blob_name)
     log.info(f"Subiendo {archivo_local} -> gs://{bucket_name}/{blob_name}")
-    blob.upload_from_filename(archivo_local)
+    blob.upload_from_filename(archivo_local, timeout=600)
     log.info("Carga a Cloud Storage completada.")
     return blob_name
 
