@@ -1,0 +1,19 @@
+# Datos originales
+data/raw/
+
+# Datos procesados
+data/processed/
+
+# Resultados generados localmente
+data/results/
+
+# Entorno virtual
+venv/
+.venv/
+
+# Archivos de Python
+__pycache__/
+*.pyc
+
+# Configuración local
+.env
