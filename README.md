@@ -157,6 +157,18 @@ python codigo_fuente/transformacion_datos.py
 python scripts/04_carga_bigquery.py
 ```
 
+## Flujo de Ejecución
+[scripts/run_pipeline.bat]
+        ↓
+[ingesta_datos/ingest_data.py]
+        ↓
+[codigo_fuente/transformacion_datos.py]
+        ↓
+Cloud Storage upload
+        ↓
+[scripts/04_carga_bigquery.py]
+
+
 ## Resultados esperados
 
 Al finalizar el pipeline, se generan los siguientes artefactos:
